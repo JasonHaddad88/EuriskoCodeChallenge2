@@ -1,0 +1,282 @@
+{
+	"info": {
+		"_postman_id": "0749b068-a4c4-40d6-8231-f6e5da652479",
+		"name": "Nest Eurisko Code Challenge 2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24041164"
+	},
+	"item": [
+		{
+			"name": "Auth Requests",
+			"item": [
+				{
+					"name": "Create User 1 (Admin)",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Create User 2 (Client, Non-VIP)",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Create User 3 (Client, Non-VIP)",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Create User 4 (Client, VIP)",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Create User 5 (Client, VIP)",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Create User 6 (Client, VIP)",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Login User 1 (Admin) Copy",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Login User 2 (Client, Non-VIP)",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Login User 3 (Client, Non-VIP)",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Login User 4 (Client, VIP)",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Login User 5 (Client, VIP)",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Login User 6 (Client, VIP)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"client2002@hotmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/users/login",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Complaint Requests",
+			"item": [
+				{
+					"name": "Create Complaint Client 2 (Non-VIP)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzgyNTNkNTQ0ZDIzOGU3NDA2MDFjZmMiLCJlbWFpbCI6ImNsaWVudDEwMDBAaG90bWFpbC5jb20iLCJpc0FkbWluIjpmYWxzZSwiaXNWSVAiOmZhbHNlLCJpYXQiOjE2Njk5OTE1NDYsImV4cCI6MTY2OTk5NTE0Nn0.Mqc0P4KI7qucsmA9nJpb7RcgTPxE2PaLgxCi1twT0t4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"My motherboard was so fried...\",\r\n    \"complaintBody\": \"...that KFC asked for the recipe\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/complaints/create",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"complaints",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Complaint Client 3 (Non-VIP)",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Create Complaint Client 4 (VIP)",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Create Complaint Client 5 (VIP)",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Create Complaint Client 6 (VIP)",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Complaint Status (Admin)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzgyNTNhNTQ0ZDIzOGU3NDA2MDFjZjciLCJlbWFpbCI6ImFkbWluMTAwMEBob3RtYWlsLmNvbSIsImlzQWRtaW4iOnRydWUsImlzVklQIjpmYWxzZSwiaWF0IjoxNjY5OTI2MjE3LCJleHAiOjE2Njk5Mjk4MTd9.CCoWZILSpgADnt4BjuI7kShFO5U7t3p4iYKFOlIjplE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\": \"3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/complaints/update/63890d741cd5c9044dfb2530",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"complaints",
+								"update",
+								"63890d741cd5c9044dfb2530"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Unfiltered",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzgyNTNlMTQ0ZDIzOGU3NDA2MDFkMDEiLCJlbWFpbCI6ImNsaWVudDIwMDBAaG90bWFpbC5jb20iLCJpc0FkbWluIjpmYWxzZSwiaXNWSVAiOnRydWUsImlhdCI6MTY2OTk4Mjg1OCwiZXhwIjoxNjY5OTg2NDU4fQ.P3WLUrHIYXXUYwJUZxd7jbQh3bnbbu3XCiR4AQ4tFUU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/complaints/all",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"complaints",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Filtered",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
